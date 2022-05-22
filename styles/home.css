@@ -1,0 +1,256 @@
+
+/* GLOBAL STYLING */
+
+:root {
+  --primary: #eb0101;
+  --secondary: #b8bbbc;
+  --fade: linear-gradient(60deg,var(--secondary), var(--primary), var(--primary), var(--primary));
+  --curl: 'lobster', cursive;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
+  
+}
+
+/* NAVBAR STYLING */
+
+
+
+.alpha {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  /*background: linear-gradient(0deg,var(--primary), #000, #000, #000);*/
+  background: linear-gradient(0deg,#000, #000, #000, var(--primary), var(--primary));
+  z-index: 2;
+}
+.nav {
+/*  position: absolute;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: fixed;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  background-image: var(--fade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: 1;
+}
+
+.menus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  color: var(--secondary);
+  outline: none;
+  text-decoration: none;
+}
+.menu {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  z-index: 1;
+ /* border: 1px solid red;*/
+
+}
+.menu p {
+  padding-left: 5px;
+}
+.menu::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  border-radius: 15px;
+  left: 50%;
+  bottom: -30%;
+  z-index: 2;
+  background: var(--primary);
+  transform: translate(-50%, 0);
+  transition: .5s ease-in-out all;
+}
+.menu:hover::after {
+  width: 80%;
+  
+}
+.menu:hover, .menu:active {
+  color: var(--primary);
+  background: transparent !important;
+}
+
+
+.logo {
+  font-family: var(--curl);
+  padding-left: 3.5px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.intro-container {
+  position: absolute;
+  width: 100%;
+  min-height: 110vh;
+  bottom: 0;
+}
+.intro {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/logo.jpg');
+  object-fit: cover;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.brands {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  bottom: -100vh;
+  left: 0;
+  background: #000;
+  color: var(--secondary);
+}
+
+.watch {
+  position: relative;
+  width: 40%;
+  opacity: 0;
+  
+}
+.brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.brand-title {
+  font-size: 2.5rem;
+  position: relative;
+}
+.brand-title::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: var(--primary);
+  width: 100%;
+  height: 3px;
+  border-radius: 15px;
+}
+.intro .btns {
+  position: absolute;
+  bottom: 10%;
+}
+/*.main-img {
+  
+  height: 60vh;
+  border-radius: 50%;
+  object-fit: cover;
+}*/
+.intro-text {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 15%;
+  overflow: hidden; 
+}
+.slogan {
+  position: relative;
+  font-family: var(--normal);
+  font-size: 3rem;
+  color: var(--secondary);
+  font-weight: 750;
+  top: 5rem;
+  opacity: 0;
+}
+red {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.btns {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.subscribe {
+  position: relative;
+  color: var(--secondary);
+  margin-right: 3rem;
+  border: none;
+  background: var(--primary);
+  top: 3rem;
+  opacity: 0;
+}
+.btns .shop {
+  position: relative;
+  color: var(--primary);
+  top: 3rem;
+  border: 3px solid var(--primary);
+  background: transparent;
+  opacity: 0;
+}
+
+.btn {
+  font-weight: bolder;
+  border-radius: 25px;
+  width: 35%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  object-fit: cover;
+  transition: 500ms ease-in-out all;
+}
+
+
+.btns .shop:hover {
+  transform: scale(1.1);
+  
+}
+
+
+.subscribe:hover {
+  outline: none !important;
+  color: var(--primary);
+  background: #000;
+}
+ 
