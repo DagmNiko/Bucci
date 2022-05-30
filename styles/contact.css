@@ -148,13 +148,13 @@ form {
   border-right: none;
   border-top: none;
   font-size: 1.1rem;
-  font-family: var(--curl);
+  font-family: var(--normal);
   outline: none;
   background: transparent;
   color: var(--primary);
 }
 textarea {
-  font-family: var(--curl);
+  font-family: var(--normal);
   outline: none;
   padding: .5rem;
   margin: .5rem;
@@ -172,7 +172,7 @@ textarea {
 
 input::placeholder, textarea::placeholder {
   color: var(--primary);
-  
+  font-family: var(--curl);
 }
 
 .btn {
