@@ -119,3 +119,17 @@
     font-size: 2rem;
     font-weight: bolder;
   }
+  .card-container {
+      width: 100%;
+
+  }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+
+}
+.card {
+    width: 40vh;
+    display: flex;
+}
