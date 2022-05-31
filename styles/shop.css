@@ -99,7 +99,19 @@
     color: var(--primary);
     background: transparent !important;
   }
-  
+  .menu button {
+    background: transparent;
+    color: var(--secondary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    font-size: 1.2rem;
+  }
+  .menu button:hover, .menu button:active {
+    color: var(--primary);
+    background: transparent !important;
+  }
   
   .logo {
     font-family: var(--curl);
