@@ -121,17 +121,24 @@
     
   }
   .card-container {
-      width: 100%;
-      position: relative;
-      top: 5rem;
-  }
+    width: 100%;
+    position: relative;
+    top: 10rem;
+}
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
 
 }
 .card {
-    width: 40vh;
-    display: flex;
+  margin: 2rem;
+  width: 40vh;
+  display: flex;
+  height: 18vh;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: var(--primary) 0px 4px 16px,
+  var(--primary) 0px 8px 24px, 
+  var(--primary) 0px 10px 45px;
 }
