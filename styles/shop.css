@@ -119,8 +119,8 @@
     font-size: 2rem;
     font-weight: bolder;
     
-  }
-  .card-container {
+  } 
+ .card-container {
     width: 100%;
     position: relative;
     top: 10rem;
@@ -133,12 +133,19 @@
 }
 .card {
   margin: 2rem;
-  width: 40vh;
+  width: 45vh;
   display: flex;
-  height: 18vh;
+  height: 22vh;
   background: #222;
-  border-radius: 10px;
+  border-radius: 7px;
   box-shadow: var(--primary) 0px 4px 16px,
   var(--primary) 0px 8px 24px, 
   var(--primary) 0px 10px 45px;
+  font-size: 1.1rem;
+
+}
+.card-img {
+    width: 23vh;
+    height: 22vh;
+    
 }
