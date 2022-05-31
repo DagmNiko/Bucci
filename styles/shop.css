@@ -118,10 +118,12 @@
     padding-left: 3.5px;
     font-size: 2rem;
     font-weight: bolder;
+    
   }
   .card-container {
       width: 100%;
-
+      position: relative;
+      top: 5rem;
   }
 .cards {
     display: flex;
