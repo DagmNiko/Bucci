@@ -163,19 +163,6 @@ body {
   display: flex;
   transform: translateX(0);
 }
-@keyframes slide-faqs {
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes slide-aboutus {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
 .wrapper > * {
   min-width: 50vh;
@@ -208,21 +195,82 @@ body {
   border-radius: 15px;
   
 }
-@keyframes aboutus {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 32%;
-  }
-}
-@keyframes faqs {
-  to {
-    left: 50%;
-  }
-}
 
 .faqs {
   position: relative;
   left: 3rem;
 }
+.topic {
+  color: var(--primary);
+  font-size: 1.7rem;
+}
+.fa-chevron-right {
+  position: relative;
+  animation: chevron 1s ease-in-out infinite;
+}
+
+.question {
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+.fa-question {
+  position: relative;
+  animation: question-mark 1s ease-in-out infinite;
+}
+
+.answer, .detail {
+  color: #d9d9d9;
+  position: relative;
+  left: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+  width: 45ch;
+  margin: .7rem;
+}
+
+
+/* Fucking Animations BEGIN */
+  @keyframes slide-faqs {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes slide-aboutus {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes aboutus {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 32%;
+    }
+  }
+  @keyframes faqs {
+    to {
+      left: 50%;
+    }
+  }
+  @keyframes chevron {
+    from {
+      right: 0;
+    }
+    to {
+      right: 3px;
+    }
+  }
+  @keyframes question-mark {
+    from {
+      bottom: 3.5px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+/* Fucking Animations END */
